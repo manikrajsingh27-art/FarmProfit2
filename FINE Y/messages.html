@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FarmProfit | Messages</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="messages.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="farmer-dashboard.html" class="nav-logo">FarmProfit</a>
+      <div class="nav-actions">
+        <a href="farmer-dashboard.html" class="btn btn-ghost">Back</a>
+        <a href="buyer-dashboard.html" class="btn btn-ghost">Buyer Dashboard</a>
+        <a href="admin-dashboard.html" class="btn btn-ghost">Admin</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="messages-page">
+    <div class="page-header reveal">
+      <h1 class="page-title">Messages</h1>
+      <p class="page-sub">Communicate with buyers and farmers</p>
+    </div>
+
+    <div class="messages-layout">
+      <!-- Conversations List -->
+      <div class="conversations-list reveal">
+        <div class="section-title-row">
+          <h2 class="section-title">Conversations</h2>
+          <button class="btn btn-primary btn-sm" id="newMsgBtn">New Message</button>
+        </div>
+        <div class="conversations-list-empty" id="emptyState" style="display:none;">
+          <p style="color: var(--text-muted); text-align: center; padding: 2rem;">No conversations yet. Start a new message!</p>
+        </div>
+        <div class="conversations-list-items" id="convList">
+          <!-- Conversations populated here -->
+        </div>
+      </div>
+
+      <!-- Conversation Detail -->
+      <div class="conversation-detail reveal">
+        <div class="conv-header" id="convHeader">
+          <h2 class="conv-title" id="convTitle">Select a conversation</h2>
+          <p class="conv-sub" id="convSub">Choose a conversation to start messaging</p>
+        </div>
+
+        <div class="messages-container" id="messagesContainer">
+          <div class="messages-empty">
+            <p style="color: var(--text-muted);">No messages in this conversation yet.</p>
+          </div>
+        </div>
+
+        <div class="message-form">
+          <form id="messageForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <input type="text" id="msgSubject" placeholder="Subject" />
+              </div>
+              <div class="form-group">
+                <textarea id="msgBody" rows="3" placeholder="Type your message..."></textarea>
+              </div>
+              <div class="form-group">
+                <input type="hidden" id="msgReceiverId" />
+                <input type="hidden" id="msgReceiverRole" />
+                <input type="hidden" id="msgCropId" />
+                <input type="hidden" id="msgOfferId" />
+                <button type="submit" class="btn btn-primary btn-wide">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="messages.js"></script>
+</body>
+</html>

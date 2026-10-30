@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FarmProfit | Admin Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="admin-dashboard.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="welcome.html" class="nav-logo">FarmProfit</a>
+      <div class="nav-actions">
+        <a href="welcome.html" class="btn btn-ghost" data-scroll>Logout</a>
+        <a href="farmer-dashboard.html" class="btn btn-ghost">Farmer Dashboard</a>
+        <a href="buyer-dashboard.html" class="btn btn-ghost">Buyer Dashboard</a>
+        <a href="add-crop.html" class="btn btn-ghost">Add Crop</a>
+        <a href="buyer-option.html" class="btn btn-ghost">Buyer Options</a>
+        <a href="buyer-detail.html" class="btn btn-ghost">Buyer Detail</a>
+        <a href="profit-comparison.html" class="btn btn-ghost">Profit Compare</a>
+        <a href="storage-transport.html" class="btn btn-ghost">Storage &amp; Transport</a>
+        <a href="order-tracking.html" class="btn btn-ghost">Order Tracking</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="admin-dashboard">
+    <div class="dashboard-header reveal">
+      <div class="user-info reveal delay-1">
+        <div class="user-avatar">A</div>
+        <div class="user-meta">
+          <div class="user-name">Admin Panel</div>
+          <div class="user-id">System Administrator</div>
+        </div>
+      </div>
+      <div class="status-chip reveal delay-2">
+        <span class="dot online"></span>
+        <span>System Online</span>
+      </div>
+    </div>
+
+    <section class="stats-grid reveal delay-3">
+      <div class="stat-card">
+        <div class="stat-label">Registered Buyers</div>
+        <div class="stat-value">124</div>
+        <div class="stat-sub">Active accounts</div>
+      </div>
+      <div class="stat-card accent">
+        <div class="stat-label">Transport Rates</div>
+        <div class="stat-value">8</div>
+        <div class="stat-sub">Active providers</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Storage Providers</div>
+        <div class="stat-value">12</div>
+        <div class="stat-sub">Verified warehouses</div>
+      </div>
+      <div class="stat-card accent">
+        <div class="stat-label">Market Prices</div>
+        <div class="stat-value">42</div>
+        <div class="stat-sub">Commodities tracked</div>
+      </div>
+    </section>
+
+    <section class="actions-section reveal delay-4">
+      <div class="section-title-row">
+        <h2 class="section-title">Admin Controls</h2>
+      </div>
+      <div class="admin-grid">
+        <div class="admin-card reveal delay-5">
+          <div class="admin-icon">👥</div>
+          <div class="admin-title">Add Demo Buyers</div>
+          <div class="admin-sub">Onboard new buyer accounts</div>
+          <button class="btn btn-primary btn-sm">Add Buyer</button>
+        </div>
+        <div class="admin-card reveal delay-6">
+          <div class="admin-icon">🚚</div>
+          <div class="admin-title">Add Transport Rates</div>
+          <div class="admin-sub">Set logistics pricing per route</div>
+          <button class="btn btn-primary btn-sm">Set Rates</button>
+        </div>
+        <div class="admin-card reveal delay-7">
+          <div class="admin-icon">🏭</div>
+          <div class="admin-title">Add Storage Provider</div>
+          <div class="admin-sub">Register warehouse partners</div>
+          <button class="btn btn-primary btn-sm">Add Provider</button>
+        </div>
+        <div class="admin-card reveal delay-8">
+          <div class="admin-icon">💰</div>
+          <div class="admin-title">Add Market Prices</div>
+          <div class="admin-sub">Update commodity rate cards</div>
+          <button class="btn btn-primary btn-sm">Update Prices</button>
+        </div>
+        <div class="admin-card reveal delay-9">
+          <div class="admin-icon">✅</div>
+          <div class="admin-title">Verify Users</div>
+          <div class="admin-sub">Approve KYC and documents</div>
+          <button class="btn btn-primary btn-sm">Verify Users</button>
+        </div>
+        <div class="admin-card reveal delay-10">
+          <div class="admin-icon">📊</div>
+          <div class="admin-title">View Transactions</div>
+          <div class="admin-sub">Monitor all platform settlements</div>
+          <button class="btn btn-primary btn-sm">View Transactions</button>
+        </div>
+        <div class="admin-card reveal delay-11">
+          <div class="admin-icon">🌾</div>
+          <div class="admin-title">Produce Matched</div>
+          <div class="admin-sub">Total volume connected</div>
+          <button class="btn btn-primary btn-sm">View Totals</button>
+        </div>
+        <div class="admin-card reveal delay-12">
+          <div class="admin-icon">♻️</div>
+          <div class="admin-title">Waste Reduction</div>
+          <div class="admin-sub">Estimated waste prevented</div>
+          <button class="btn btn-primary btn-sm">View Report</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-overview reveal delay-13">
+      <div class="section-title-row">
+        <h2 class="section-title">Platform Overview</h2>
+      </div>
+      <div class="overview-grid">
+        <div class="overview-card">
+          <div class="overview-label">Total Produce Matched</div>
+          <div class="overview-value">4,850 quintals</div>
+          <div class="overview-trend positive">↑ 12% this month</div>
+        </div>
+        <div class="overview-card">
+          <div class="overview-label">Estimated Waste Reduction</div>
+          <div class="overview-value">23.4 tons</div>
+          <div class="overview-trend positive">↓ 8% spoilage vs last quarter</div>
+        </div>
+        <div class="overview-card">
+          <div class="overview-label">Pending Verifications</div>
+          <div class="overview-value">14</div>
+          <div class="overview-trend neutral">Awaiting admin review</div>
+        </div>
+        <div class="overview-card">
+          <div class="overview-label">Total Transaction Value</div>
+          <div class="overview-value">₹1.84 Cr</div>
+          <div class="overview-trend positive">↑ 18% this quarter</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="admin-dashboard.js"></script>
+</body>
+</html>

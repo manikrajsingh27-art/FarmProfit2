@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FarmProfit | Welcome</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="welcome.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">FarmProfit</a>
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-ghost" data-scroll>Back to Home</a>
+        <a href="farmer-dashboard.html" class="btn btn-ghost">Farmer Dashboard</a>
+        <a href="buyer-dashboard.html" class="btn btn-ghost">Buyer Dashboard</a>
+        <a href="admin-dashboard.html" class="btn btn-ghost">Admin Dashboard</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="welcome">
+    <div class="welcome-bg"></div>
+    <div class="welcome-content reveal">
+      <div class="brand-block reveal delay-1">
+        <div class="brand-mark">◆</div>
+        <div class="brand-name">FarmProfit</div>
+        <div class="brand-tagline">SELL SMARTER . EARN MORE . WASTE LESS</div>
+      </div>
+
+      <div class="language-selector reveal delay-3">
+        <label class="lang-label">Select Language</label>
+        <div class="lang-group">
+          <button class="lang-btn active" data-lang="en">English</button>
+          <button class="lang-btn" data-lang="hi">हिन्दी</button>
+        </div>
+      </div>
+
+      <div class="role-selector reveal delay-4">
+        <label class="role-label">Continue As</label>
+        <div class="role-group">
+          <button class="role-btn active" data-role="farmer">
+            <span class="role-icon">🌾</span>
+            <span class="role-text">Farmer</span>
+          </button>
+          <button class="role-btn" data-role="buyer">
+            <span class="role-icon">🏪</span>
+            <span class="role-text">Buyer</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="auth-actions reveal delay-5">
+        <button class="btn btn-primary btn-wide" id="demoLogin">Demo Login</button>
+        <p class="demo-hint">Demo: demo@farmprofit.com / demo123</p>
+      </div>
+
+      <div class="status-indicator reveal delay-6">
+        <span class="status-dot" id="statusDot"></span>
+        <span class="status-text" id="statusText">Online</span>
+      </div>
+    </div>
+  </main>
+
+  <script src="welcome.js"></script>
+</body>
+</html>

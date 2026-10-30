@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FarmProfit | Add Crop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="add-crop.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="farmer-dashboard.html" class="nav-logo">FarmProfit</a>
+      <div class="nav-actions">
+        <a href="farmer-dashboard.html" class="btn btn-ghost" data-scroll>Back</a>
+        <a href="farmer-dashboard.html" class="btn btn-ghost">Farmer Dashboard</a>
+        <a href="buyer-option.html" class="btn btn-ghost">Buyer Options</a>
+        <a href="profit-comparison.html" class="btn btn-ghost">Profit Compare</a>
+        <a href="storage-transport.html" class="btn btn-ghost">Storage &amp; Transport</a>
+        <a href="order-tracking.html" class="btn btn-ghost">Order Tracking</a>
+        <a href="buyer-dashboard.html" class="btn btn-ghost">Buyer Dashboard</a>
+        <a href="admin-dashboard.html" class="btn btn-ghost">Admin</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="add-crop">
+    <div class="page-header reveal">
+      <h1 class="page-title">Add New Crop</h1>
+      <p class="page-sub">List your produce for buyers across the network</p>
+    </div>
+
+    <form class="crop-form reveal" id="cropForm">
+      <div class="form-section reveal delay-1">
+        <div class="section-label">Crop Details</div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Crop Name</label>
+            <input type="text" id="cropName" placeholder="e.g. Basmati Rice" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Variety</label>
+            <input type="text" id="variety" placeholder="e.g. Pusa Basmati 1121" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Quantity</label>
+            <div class="input-with-unit">
+              <input type="number" id="quantity" placeholder="0" required min="0" />
+              <span class="unit-label">quintals</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Quality Grade</label>
+            <select id="qualityGrade" required>
+              <option value="">Select grade</option>
+              <option value="A">Grade A - Premium</option>
+              <option value="B+">Grade B+ - Good</option>
+              <option value="B">Grade B - Standard</option>
+              <option value="C">Grade C - Economy</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Unit</label>
+            <select id="unit" required>
+              <option value="kg">kg</option>
+              <option value="quintal">Quintal</option>
+              <option value="ton">Ton</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Harvest Date</label>
+            <input type="date" id="harvestDate" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Location</label>
+            <input type="text" id="location" placeholder="Village, District, State" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Expected Price</label>
+            <div class="input-with-unit">
+              <span class="unit-label">₹</span>
+              <input type="number" id="expectedPrice" placeholder="per unit" required min="0" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section reveal delay-2">
+        <div class="section-label">Storage</div>
+        <div class="form-grid storage-grid">
+          <div class="form-group">
+            <label class="form-label">Storage Available?</label>
+            <div class="toggle-group">
+              <button class="toggle-btn active" data-value="yes">Yes</button>
+              <button class="toggle-btn" data-value="no">No</button>
+            </div>
+            <input type="hidden" id="storageAvailable" value="yes" />
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section reveal delay-3">
+        <div class="section-label">Media & Input</div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Photo Upload</label>
+            <div class="photo-upload">
+              <input type="file" id="photoUpload" accept="image/*" />
+              <div class="upload-zone">
+                <div class="upload-icon">📷</div>
+                <div class="upload-text">Tap to upload crop photo</div>
+                <div class="upload-hint">JPG, PNG up to 5MB</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group voice-group">
+            <label class="form-label">Voice Input</label>
+            <button class="btn btn-ghost voice-btn" id="voiceBtn">
+              <span class="voice-icon">🎤</span>
+              <span class="voice-text">Start Voice Entry</span>
+            </button>
+            <div class="voice-status" id="voiceStatus">Tap microphone to speak crop details</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-actions reveal delay-4">
+        <button type="button" class="btn btn-outline btn-wide" id="saveOffline">Save Offline</button>
+        <button type="submit" class="btn btn-primary btn-wide">Save & List Crop</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="add-crop.js"></script>
+</body>
+</html>

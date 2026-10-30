@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FarmProfit | Buyer Detail</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="buyer-detail.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="buyer-option.html" class="nav-logo">FarmProfit</a>
+      <div class="nav-actions">
+        <a href="buyer-option.html" class="btn btn-ghost" data-scroll>Back</a>
+        <a href="buyer-option.html" class="btn btn-ghost">Buyer Options</a>
+        <a href="messages.html" class="btn btn-ghost">Messages</a>
+        <a href="order-tracking.html" class="btn btn-ghost">Order Tracking</a>
+        <a href="buyer-dashboard.html" class="btn btn-ghost">Buyer Dashboard</a>
+        <a href="farmer-dashboard.html" class="btn btn-ghost">Farmer Dashboard</a>
+        <a href="profit-comparison.html" class="btn btn-ghost">Profit Compare</a>
+        <a href="storage-transport.html" class="btn btn-ghost">Storage &amp; Transport</a>
+        <a href="admin-dashboard.html" class="btn btn-ghost">Admin</a>
+        <a href="messages.html" class="btn btn-ghost">Messages</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="buyer-detail">
+    <div class="page-header reveal">
+      <h1 class="page-title">Buyer Profile</h1>
+      <p class="page-sub">Review buyer credentials before accepting the offer</p>
+    </div>
+
+    <div class="detail-grid reveal delay-1">
+      <section class="profile-card">
+        <div class="card-header reveal delay-2">
+          <div class="buyer-avatar">A</div>
+          <div class="buyer-meta">
+            <div class="buyer-name">FreshMart Direct</div>
+            <div class="buyer-verified-badge">Verified Buyer</div>
+          </div>
+          <div class="buyer-contact-chip">
+            <span class="dot online"></span>
+            <span>Active Now</span>
+          </div>
+        </div>
+
+        <div class="info-section reveal delay-3">
+          <div class="section-title">Business Verification</div>
+          <div class="verification-list">
+            <div class="verify-item">
+              <span class="verify-label">GST Number</span>
+              <span class="verify-value">22AAAAA0000A1Z5</span>
+            </div>
+            <div class="verify-item">
+              <span class="verify-label">PAN Card</span>
+              <span class="verify-value">ABCDE1234F</span>
+            </div>
+            <div class="verify-item">
+              <span class="verify-label">Business License</span>
+              <span class="verify-value">FM-LIC-8842</span>
+            </div>
+            <div class="verify-item">
+              <span class="verify-label">Bank Verified</span>
+              <span class="verify-value">Yes - HDFC Bank</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-section reveal delay-4">
+          <div class="section-title">Transaction Score</div>
+          <div class="score-card">
+            <div class="score-big">4.9</div>
+            <div class="score-label">Reliability Score</div>
+            <div class="score-sub">128 successful transactions</div>
+            <div class="score-bar">
+              <div class="score-fill" style="width: 98%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="requirements-card reveal delay-5">
+        <div class="card-header">
+          <div class="section-title">Required Crop & Quantity</div>
+        </div>
+        <div class="req-list">
+          <div class="req-item">
+            <div class="req-name">Basmati Rice</div>
+            <div class="req-qty">150 quintals</div>
+          </div>
+          <div class="req-item">
+            <div class="req-name">Grade A+</div>
+            <div class="req-qty">Quality standard</div>
+          </div>
+        </div>
+
+        <div class="price-card reveal delay-6">
+          <div class="price-label">Price Offered</div>
+          <div class="price-value">₹2,350 / quintal</div>
+          <div class="price-total">Total: ₹3,52,500</div>
+        </div>
+
+        <div class="info-section reveal delay-7">
+          <div class="section-title">Pickup Location</div>
+          <div class="location-text">Warehouse B-12, Industrial Area, Dist. Ludhiana, Punjab</div>
+        </div>
+
+        <div class="info-section reveal delay-8">
+          <div class="section-title">Payment Terms</div>
+          <div class="terms-list">
+            <div class="term-item">
+              <span class="term-label">Mode</span>
+              <span class="term-value">NEFT / UPI</span>
+            </div>
+            <div class="term-item">
+              <span class="term-label">Timeline</span>
+              <span class="term-value">Within 48 hours of delivery</span>
+            </div>
+            <div class="term-item">
+              <span class="term-label">Advance</span>
+              <span class="term-value">20% token amount</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="actions-row reveal delay-9">
+      <button class="btn btn-outline btn-wide" id="reportBuyer">Report Buyer</button>
+      <button class="btn btn-primary btn-wide" id="acceptOffer">Accept Offer</button>
+      <button class="btn btn-ghost btn-wide" id="chatBuyer">Contact / Chat</button>
+    </div>
+  </main>
+
+  <script src="buyer-detail.js"></script>
+</body>
+</html>

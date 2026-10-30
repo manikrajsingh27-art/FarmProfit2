@@ -1,0 +1,234 @@
+{
+  "users": [
+    {
+      "id": "user-farmer-1",
+      "email": "demo@farmprofit.com",
+      "password": "demo123",
+      "role": "farmer",
+      "name": "Demo Farmer",
+      "verified": true
+    },
+    {
+      "id": "user-buyer-1",
+      "email": "buyer@farmprofit.com",
+      "password": "demo123",
+      "role": "buyer",
+      "name": "Demo Buyer",
+      "verified": true
+    },
+    {
+      "id": "user-admin-1",
+      "email": "admin@farmprofit.com",
+      "password": "admin123",
+      "role": "admin",
+      "name": "Admin",
+      "verified": true
+    }
+  ],
+  "crops": [
+    {
+      "id": "crop-1793300151137-125",
+      "farmerId": "user-farmer-1",
+      "farmerName": "Demo Farmer",
+      "cropName": "Rice",
+      "variety": "pusa",
+      "quantity": 12,
+      "qualityGrade": "B+",
+      "unit": "kg",
+      "harvestDate": "2222-02-22",
+      "location": "sre",
+      "expectedPrice": 23,
+      "storageAvailable": true,
+      "photoUrl": null,
+      "voiceInput": null,
+      "status": "active",
+      "createdAt": "2026-10-29T18:55:51.138Z"
+    },
+    {
+      "id": "crop-1793300475017-791",
+      "farmerId": "user-farmer-1",
+      "farmerName": "Demo Farmer",
+      "cropName": "Rice",
+      "variety": "pusa",
+      "quantity": 12,
+      "qualityGrade": "A",
+      "unit": "kg",
+      "harvestDate": "2222-02-02",
+      "location": "sre",
+      "expectedPrice": 12,
+      "storageAvailable": true,
+      "photoUrl": null,
+      "voiceInput": null,
+      "status": "active",
+      "createdAt": "2026-10-29T19:01:15.017Z"
+    },
+    {
+      "id": "crop-1793308320507-252",
+      "farmerId": "user-farmer-1",
+      "farmerName": "Demo Farmer",
+      "cropName": "Rice",
+      "variety": "pusa",
+      "quantity": 12,
+      "qualityGrade": "B+",
+      "unit": "kg",
+      "harvestDate": "2222-02-02",
+      "location": "sre",
+      "expectedPrice": 12,
+      "storageAvailable": true,
+      "photoUrl": null,
+      "voiceInput": null,
+      "status": "active",
+      "createdAt": "2026-10-29T21:12:00.508Z"
+    }
+  ],
+  "buyers": [
+    {
+      "id": "buyer-freshmart-1",
+      "userId": "buyer-freshmart-1",
+      "buyerName": "FreshMart Direct",
+      "requiredCrop": "Basmati Rice",
+      "requiredQuantity": 150,
+      "qualityRequirement": "A+",
+      "location": "Ludhiana, Punjab",
+      "deadline": "2026-10-30",
+      "maxPrice": 2350,
+      "status": "active",
+      "verified": true,
+      "createdAt": "2026-10-29T10:00:00.000Z"
+    },
+    {
+      "id": "buyer-grainhub-1",
+      "userId": "buyer-grainhub-1",
+      "buyerName": "GrainHub Traders",
+      "requiredCrop": "Wheat",
+      "requiredQuantity": 300,
+      "qualityRequirement": "B+",
+      "location": "Karnal, Haryana",
+      "deadline": "2026-11-02",
+      "maxPrice": 2100,
+      "status": "active",
+      "verified": true,
+      "createdAt": "2026-10-29T10:00:00.000Z"
+    },
+    {
+      "id": "buyer-agrifood-1",
+      "userId": "buyer-agrifood-1",
+      "buyerName": "AgriFood Processor",
+      "requiredCrop": "Mustard Seeds",
+      "requiredQuantity": 500,
+      "qualityRequirement": "A",
+      "location": "Jaipur, Rajasthan",
+      "deadline": "2026-11-10",
+      "maxPrice": 2550,
+      "status": "active",
+      "verified": true,
+      "createdAt": "2026-10-29T10:00:00.000Z"
+    },
+    {
+      "id": "buyer-mandi-1",
+      "userId": "buyer-mandi-1",
+      "buyerName": "Local Mandi Trader",
+      "requiredCrop": "Basmati Rice",
+      "requiredQuantity": 100,
+      "qualityRequirement": "All grades",
+      "location": "Amritsar, Punjab",
+      "deadline": "2026-10-29",
+      "maxPrice": 1950,
+      "status": "active",
+      "verified": false,
+      "createdAt": "2026-10-29T10:00:00.000Z"
+    }
+  ],
+  "offers": [],
+  "transactions": [],
+  "storage": [
+    {
+      "id": "s-1",
+      "name": "ColdStore Punjab",
+      "location": "Punjab, India",
+      "availableCapacity": 450,
+      "costPerQuintalPerDay": 8,
+      "spoilageRisk": "low",
+      "distanceKm": 8,
+      "isActive": true
+    },
+    {
+      "id": "s-2",
+      "name": "AgriWarehouse North",
+      "location": "Haryana, India",
+      "availableCapacity": 1200,
+      "costPerQuintalPerDay": 6,
+      "spoilageRisk": "medium",
+      "distanceKm": 15,
+      "isActive": true
+    },
+    {
+      "id": "s-3",
+      "name": "HarvestSafe Silos",
+      "location": "Punjab, India",
+      "availableCapacity": 800,
+      "costPerQuintalPerDay": 7,
+      "spoilageRisk": "low",
+      "distanceKm": 22,
+      "isActive": true
+    }
+  ],
+  "transport": [
+    {
+      "id": "t-1",
+      "name": "Kisan Logistics",
+      "location": "Punjab, India",
+      "vehicleCapacity": 10,
+      "pickupCost": 4500,
+      "estimatedDeliveryHours": 12,
+      "distanceKm": 10,
+      "isActive": true
+    },
+    {
+      "id": "t-2",
+      "name": "GreenMove Trucking",
+      "location": "Haryana, India",
+      "vehicleCapacity": 20,
+      "pickupCost": 7200,
+      "estimatedDeliveryHours": 18,
+      "distanceKm": 18,
+      "isActive": true
+    },
+    {
+      "id": "t-3",
+      "name": "AgriHaul Carriers",
+      "location": "Punjab, India",
+      "vehicleCapacity": 15,
+      "pickupCost": 5800,
+      "estimatedDeliveryHours": 14,
+      "distanceKm": 25,
+      "isActive": true
+    }
+  ],
+  "marketPrices": [
+    {
+      "id": "m-1",
+      "cropName": "Basmati Rice",
+      "variety": "Pusa Basmati 1121",
+      "pricePerQuintal": 2400,
+      "location": "Punjab, India",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "m-2",
+      "cropName": "Wheat",
+      "variety": "HD-2967",
+      "pricePerQuintal": 2100,
+      "location": "Punjab, India",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "m-3",
+      "cropName": "Mustard Seeds",
+      "variety": "Varuna",
+      "pricePerQuintal": 5200,
+      "location": "Rajasthan, India",
+      "date": "2026-10-29"
+    }
+  ]
+}

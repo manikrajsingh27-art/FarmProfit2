@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FarmProfit | Premium Agribusiness Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">FarmProfit</a>
+      <div class="nav-actions"></div>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content reveal">
+      <span class="hero-badge reveal">Modern Agribusiness Intelligence</span>
+      <h1 class="hero-title reveal">Grow Smarter.<br />Harvest More Profit.</h1>
+      <p class="hero-text reveal">FarmProfit turns field data into premium revenue. Bold insights for the modern farm.</p>
+      <div class="role-selector reveal">
+        <label class="role-label">Continue As</label>
+        <div class="role-group">
+          <button class="role-btn active" data-role="farmer" onclick="goToDashboard('farmer')">
+            <span class="role-icon">🌾</span>
+            <span class="role-text">Farmer</span>
+          </button>
+          <button class="role-btn" data-role="buyer" onclick="goToDashboard('buyer')">
+            <span class="role-icon">🏪</span>
+            <span class="role-text">Buyer</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <script src="index.js"></script>
+  <script>
+    function goToDashboard(role) {
+      const user = role === "farmer" 
+        ? { id: "user-farmer-1", email: "demo@farmprofit.com", role: "farmer", name: "Demo Farmer" }
+        : { id: "user-buyer-1", email: "buyer@farmprofit.com", role: "buyer", name: "Demo Buyer" };
+      localStorage.setItem("fp_user", JSON.stringify(user));
+      localStorage.setItem("fp_user_role", role);
+      window.location.href = role === "buyer" ? "buyer-dashboard.html" : "farmer-dashboard.html";
+    }
+  </script>
+</body>
+</html>

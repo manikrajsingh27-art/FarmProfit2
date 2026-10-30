@@ -1,0 +1,14 @@
+{
+  "name": "farmprofit-backend",
+  "version": "1.0.0",
+  "description": "FarmProfit - Premium Agribusiness Intelligence Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "vercel-build": "echo 'Vercel build complete - static files served by server.js'"
+  },
+  "keywords": ["agribusiness", "farm", "dashboard", "nodejs"],
+  "author": "FarmProfit",
+  "license": "MIT"
+}

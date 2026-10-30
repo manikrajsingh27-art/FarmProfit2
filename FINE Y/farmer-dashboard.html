@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FarmProfit | Farmer Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="farmer-dashboard.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="welcome.html" class="nav-logo">FarmProfit</a>
+      <div class="nav-actions">
+        <a href="welcome.html" class="btn btn-ghost" data-scroll>Logout</a>
+        <a href="add-crop.html" class="btn btn-primary" data-scroll>Add Crop</a>
+        <a href="buyer-option.html" class="btn btn-ghost">Buyer Options</a>
+        <a href="profit-comparison.html" class="btn btn-ghost">Profit Compare</a>
+        <a href="storage-transport.html" class="btn btn-ghost">Storage &amp; Transport</a>
+        <a href="order-tracking.html" class="btn btn-ghost">Order Tracking</a>
+        <a href="buyer-dashboard.html" class="btn btn-ghost">Buyer Dashboard</a>
+        <a href="admin-dashboard.html" class="btn btn-ghost">Admin</a>
+        <a href="messages.html" class="btn btn-ghost">Messages</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="dashboard">
+    <div class="dashboard-header reveal">
+      <div class="user-info reveal delay-1">
+        <div class="user-avatar">F</div>
+        <div class="user-meta">
+          <div class="user-name">Farmer Profile</div>
+          <div class="user-id">ID: FP-8842</div>
+        </div>
+      </div>
+      <div class="status-chip reveal delay-2">
+        <span class="dot online"></span>
+        <span>Online</span>
+      </div>
+    </div>
+
+    <section class="stats-grid reveal delay-3">
+      <div class="stat-card">
+        <div class="stat-label">Crop List</div>
+        <div class="stat-value">4</div>
+        <div class="stat-sub">Active listings</div>
+      </div>
+      <div class="stat-card accent">
+        <div class="stat-label">Best Selling Option</div>
+        <div class="stat-value">Direct Buyer</div>
+        <div class="stat-sub">₹2,850 / quintal</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Expected Net Income</div>
+        <div class="stat-value">₹1,14,000</div>
+        <div class="stat-sub">This season</div>
+      </div>
+      <div class="stat-card accent">
+        <div class="stat-label">Payment Status</div>
+        <div class="stat-value paid">Paid</div>
+        <div class="stat-sub">Last settlement</div>
+      </div>
+    </section>
+
+    <section class="quick-actions reveal delay-4">
+      <div class="section-title-row">
+        <h2 class="section-title">Quick Actions</h2>
+        <a href="add-crop.html" class="btn btn-primary btn-sm">+ Add Crop</a>
+      </div>
+      <div class="actions-grid">
+        <button class="action-card reveal delay-5">
+          <div class="action-icon">📊</div>
+          <div class="action-title">Compare Selling Options</div>
+          <div class="action-sub">Check best market rates</div>
+        </button>
+        <button class="action-card reveal delay-6">
+          <div class="action-icon">🚚</div>
+          <div class="action-title">Book Transport</div>
+          <div class="action-sub">Schedule pickup & delivery</div>
+        </button>
+        <button class="action-card reveal delay-7">
+          <div class="action-icon">📦</div>
+          <div class="action-title">Storage Options</div>
+          <div class="action-sub">Find nearby warehouses</div>
+        </button>
+        <button class="action-card reveal delay-8">
+          <div class="action-icon">💳</div>
+          <div class="action-title">Track Payments</div>
+          <div class="action-sub">View pending settlements</div>
+        </button>
+      </div>
+    </section>
+
+    <section class="alerts reveal delay-9">
+      <div class="section-title-row">
+        <h2 class="section-title">Recent Buyer Alerts</h2>
+      </div>
+      <div class="alerts-list">
+        <div class="alert-card reveal">
+          <div class="alert-avatar">B</div>
+          <div class="alert-content">
+            <div class="alert-buyer">FreshMart Direct</div>
+            <div class="alert-message">Interested in your Wheat - 10 quintals</div>
+            <div class="alert-time">2 hours ago</div>
+          </div>
+          <button class="btn btn-ghost btn-sm">View</button>
+        </div>
+        <div class="alert-card reveal">
+          <div class="alert-avatar">T</div>
+          <div class="alert-content">
+            <div class="alert-buyer">GrainHub Traders</div>
+            <div class="alert-message">New offer for Basmati Rice</div>
+            <div class="alert-time">5 hours ago</div>
+          </div>
+          <button class="btn btn-ghost btn-sm">View</button>
+        </div>
+        <div class="alert-card reveal">
+          <div class="alert-avatar">S</div>
+          <div class="alert-content">
+            <div class="alert-buyer">AgriFood Processor</div>
+            <div class="alert-message">Bulk purchase request received</div>
+            <div class="alert-time">1 day ago</div>
+          </div>
+          <button class="btn btn-ghost btn-sm">View</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="crop-list reveal delay-10">
+      <div class="section-title-row">
+        <h2 class="section-title">Your Crops</h2>
+      </div>
+      <div class="crops-grid">
+        <div class="crop-card reveal">
+          <div class="crop-badge">Wheat</div>
+          <div class="crop-name">Basmati Rice</div>
+          <div class="crop-meta">
+            <span>📦 250 quintals</span>
+            <span>• Grade A</span>
+            <span>• ₹2,150/q</span>
+          </div>
+          <div class="crop-actions">
+            <button class="btn btn-ghost btn-sm">Edit</button>
+            <button class="btn btn-primary btn-sm">Sell</button>
+          </div>
+        </div>
+        <div class="crop-card reveal">
+          <div class="crop-badge">Maize</div>
+          <div class="crop-name">Hybrid Maize</div>
+          <div class="crop-meta">
+            <span>📦 180 quintals</span>
+            <span>• Grade B+</span>
+            <span>• ₹1,450/q</span>
+          </div>
+          <div class="crop-actions">
+            <button class="btn btn-ghost btn-sm">Edit</button>
+            <button class="btn btn-primary btn-sm">Sell</button>
+          </div>
+        </div>
+        <div class="crop-card reveal">
+          <div class="crop-badge">Pulses</div>
+          <div class="crop-name">Tur Dal</div>
+          <div class="crop-meta">
+            <span>📦 90 quintals</span>
+            <span>• Grade A</span>
+            <span>• ₹3,200/q</span>
+          </div>
+          <div class="crop-actions">
+            <button class="btn btn-ghost btn-sm">Edit</button>
+            <button class="btn btn-primary btn-sm">Sell</button>
+          </div>
+        </div>
+        <div class="crop-card reveal">
+          <div class="crop-badge">Oilseeds</div>
+          <div class="crop-name">Mustard Seeds</div>
+          <div class="crop-meta">
+            <span>📦 140 quintals</span>
+            <span>• Grade A</span>
+            <span>• ₹5,100/q</span>
+          </div>
+          <div class="crop-actions">
+            <button class="btn btn-ghost btn-sm">Edit</button>
+            <button class="btn btn-primary btn-sm">Sell</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="farmer-dashboard.js"></script>
+</body>
+</html>

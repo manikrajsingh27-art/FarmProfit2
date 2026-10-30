@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FarmProfit | Buyer Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="buyer-dashboard.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="welcome.html" class="nav-logo">FarmProfit</a>
+      <div class="nav-actions">
+        <a href="welcome.html" class="btn btn-ghost" data-scroll>Logout</a>
+        <button class="btn btn-primary" id="addReqBtn">Add Requirement</button>
+        <a href="buyer-option.html" class="btn btn-ghost">Buyer Options</a>
+        <a href="buyer-detail.html" class="btn btn-ghost">Buyer Detail</a>
+        <a href="order-tracking.html" class="btn btn-ghost">Order Tracking</a>
+        <a href="farmer-dashboard.html" class="btn btn-ghost">Farmer Dashboard</a>
+        <a href="admin-dashboard.html" class="btn btn-ghost">Admin</a>
+        <a href="messages.html" class="btn btn-ghost">Messages</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="buyer-dashboard">
+    <div class="dashboard-header reveal">
+      <div class="user-info reveal delay-1">
+        <div class="user-avatar">B</div>
+        <div class="user-meta">
+          <div class="user-name">Buyer Account</div>
+          <div class="user-id">ID: BP-5510</div>
+        </div>
+      </div>
+      <div class="status-chip reveal delay-2">
+        <span class="dot online"></span>
+        <span>Active Buyer</span>
+      </div>
+    </div>
+
+    <section class="stats-grid reveal delay-3">
+      <div class="stat-card">
+        <div class="stat-label">Active Requirements</div>
+        <div class="stat-value">3</div>
+        <div class="stat-sub">Open requests</div>
+      </div>
+      <div class="stat-card accent">
+        <div class="stat-label">Matched Crops</div>
+        <div class="stat-value">12</div>
+        <div class="stat-sub">Available listings</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Offers Made</div>
+        <div class="stat-value">5</div>
+        <div class="stat-sub">Pending & accepted</div>
+      </div>
+      <div class="stat-card accent">
+        <div class="stat-label">Previous Purchases</div>
+        <div class="stat-value">18</div>
+        <div class="stat-sub">Completed orders</div>
+      </div>
+    </section>
+
+    <section class="requirements-section reveal delay-4">
+      <div class="section-title-row">
+        <h2 class="section-title">My Requirements</h2>
+      </div>
+      <div class="req-grid">
+        <div class="req-card">
+          <div class="req-name">Basmati Rice</div>
+          <div class="req-qty">200 quintals</div>
+          <div class="req-grade">Grade A+</div>
+          <div class="req-price">₹2,400 / q max</div>
+          <div class="req-actions">
+            <button class="btn btn-ghost btn-sm">Edit</button>
+            <button class="btn btn-primary btn-sm">Find Matches</button>
+          </div>
+        </div>
+        <div class="req-card">
+          <div class="req-name">Wheat</div>
+          <div class="req-qty">300 quintals</div>
+          <div class="req-grade">Grade B+</div>
+          <div class="req-price">₹2,100 / q max</div>
+          <div class="req-actions">
+            <button class="btn btn-ghost btn-sm">Edit</button>
+            <button class="btn btn-primary btn-sm">Find Matches</button>
+          </div>
+        </div>
+        <div class="req-card">
+          <div class="req-name">Mustard Seeds</div>
+          <div class="req-qty">100 quintals</div>
+          <div class="req-grade">Grade A</div>
+          <div class="req-price">₹5,200 / q max</div>
+          <div class="req-actions">
+            <button class="btn btn-ghost btn-sm">Edit</button>
+            <button class="btn btn-primary btn-sm">Find Matches</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="matched-section reveal delay-5">
+      <div class="section-title-row">
+        <h2 class="section-title">Matched Crop Listings</h2>
+      </div>
+      <div class="matched-grid">
+        <div class="matched-card">
+          <div class="matched-header">
+            <div class="matched-farmer">Farmer: R. Singh</div>
+            <div class="matched-location">Punjab · 12 km</div>
+          </div>
+          <div class="matched-crop">Basmati Rice · Grade A+</div>
+          <div class="matched-qty">180 quintals available</div>
+          <div class="matched-price">₹2,350 / quintal</div>
+          <button class="btn btn-primary btn-wide btn-sm">Make Offer</button>
+        </div>
+        <div class="matched-card">
+          <div class="matched-header">
+            <div class="matched-farmer">Farmer: A. Verma</div>
+            <div class="matched-location">Haryana · 28 km</div>
+          </div>
+          <div class="matched-crop">Wheat · Grade B+</div>
+          <div class="matched-qty">250 quintals available</div>
+          <div class="matched-price">₹2,050 / quintal</div>
+          <button class="btn btn-primary btn-wide btn-sm">Make Offer</button>
+        </div>
+        <div class="matched-card">
+          <div class="matched-header">
+            <div class="matched-farmer">Farmer: S. Kaur</div>
+            <div class="matched-location">Punjab · 35 km</div>
+          </div>
+          <div class="matched-crop">Mustard Seeds · Grade A</div>
+          <div class="matched-qty">90 quintals available</div>
+          <div class="matched-price">₹5,100 / quintal</div>
+          <button class="btn btn-primary btn-wide btn-sm">Make Offer</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="compare-section reveal delay-6">
+      <div class="section-title-row">
+        <h2 class="section-title">Compare Crop Listings</h2>
+      </div>
+      <div class="compare-hint">
+        Select up to 3 listings to compare prices, quality, and delivery terms side by side.
+      </div>
+      <div class="compare-list">
+        <div class="compare-item">
+          <div class="compare-select">
+            <input type="checkbox" id="cmp1" />
+            <label for="cmp1">Basmati Rice - R. Singh</label>
+          </div>
+        </div>
+        <div class="compare-item">
+          <div class="compare-select">
+            <input type="checkbox" id="cmp2" />
+            <label for="cmp2">Wheat - A. Verma</label>
+          </div>
+        </div>
+        <div class="compare-item">
+          <div class="compare-select">
+            <input type="checkbox" id="cmp3" />
+            <label for="cmp3">Mustard Seeds - S. Kaur</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="purchases-section reveal delay-7">
+      <div class="section-title-row">
+        <h2 class="section-title">Previous Purchases</h2>
+      </div>
+      <div class="purchases-list">
+        <div class="purchase-card">
+          <div class="purchase-info">
+            <div class="purchase-crop">Basmati Rice</div>
+            <div class="purchase-farmer">From: R. Singh · Punjab</div>
+          </div>
+          <div class="purchase-meta">
+            <span>150 quintals</span>
+            <span>• ₹3,52,500</span>
+          </div>
+          <div class="purchase-status paid">Completed</div>
+        </div>
+        <div class="purchase-card">
+          <div class="purchase-info">
+            <div class="purchase-crop">Wheat</div>
+            <div class="purchase-farmer">From: M. Patel · Gujarat</div>
+          </div>
+          <div class="purchase-meta">
+            <span>200 quintals</span>
+            <span>• ₹4,10,000</span>
+          </div>
+          <div class="purchase-status paid">Completed</div>
+        </div>
+        <div class="purchase-card">
+          <div class="purchase-info">
+            <div class="purchase-crop">Tur Dal</div>
+            <div class="purchase-farmer">From: K. Reddy · Karnataka</div>
+          </div>
+          <div class="purchase-meta">
+            <span>80 quintals</span>
+            <span>• ₹2,56,000</span>
+          </div>
+          <div class="purchase-status pending">In Transit</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="buyer-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+/* ============================================
+   FARMPREMIUM - Buyer Option CSS
+   ============================================ */
+
+:root {
+  --mocha-brown: #5d4037;
+  --champagne-gold: #f5e6d3;
+  --burnt-amber: #bf360c;
+  --burnt-amber-dark: #8e2f00;
+  --bg: #0a0a0a;
+  --surface: #1a1a1a;
+  --glass: rgba(255,255,255,0.04);
+  --glass-border: rgba(245,230,210,0.12);
+  --text: #ffffff;
+  --text-muted: #9a8c78;
+  --accent: var(--burnt-amber);
+  --accent-glow: rgba(191,54,12,0.3);
+  --ink: #0a0a0a;
+  --radius: 16px;
+  --radius-lg: 24px;
+  --transition: all 500ms cubic-bezier(0.23,1,0.32,1);
+  --success: #22c55e;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--text); font-family: "Plus Jakarta Sans", system-ui, sans-serif; line-height: 1.6; overflow-x: hidden; }
+h1, h2, h3, .nav-logo { font-family: "Outfit", system-ui, sans-serif; font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+.nav { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; padding: 1rem 0; transition: var(--transition); }
+.nav.scrolled { padding: 0.75rem 0; background: rgba(10,10,10,0.85); backdrop-filter: blur(24px); border-bottom: 1px solid var(--glass-border); }
+.nav-container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; }
+.nav-logo { font-size: 1.75rem; font-weight: 900; letter-spacing: -0.03em; color: var(--text); z-index: 1001; transition: var(--transition); display: flex; align-items: center; gap: 0.5rem; }
+.nav-logo::before { content: "◆"; color: var(--accent); font-size: 1.25rem; }
+.nav-actions { display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem 1.75rem; font-family: inherit; font-weight: 600; font-size: 0.9rem; border-radius: 12px; border: none; cursor: pointer; transition: var(--transition); }
+.btn-primary { background: var(--accent-gradient); color: var(--ink); box-shadow: 0 0 30px var(--accent-glow); }
+.btn-primary:hover { transform: translateY(-2px); filter: brightness(1.1); }
+.btn-outline { background: transparent; color: var(--text); border: 1px solid var(--glass-border); }
+.btn-outline:hover { background: var(--glass); border-color: rgba(255,255,255,0.2); }
+.btn-ghost { background: rgba(0,0,0,0.3); color: var(--text-muted); border: 1px solid var(--glass-border); }
+.btn-ghost:hover { background: var(--surface-hover); color: var(--text); border-color: rgba(255,255,255,0.2); }
+.btn-sm { padding: 0.55rem 1rem; font-size: 0.85rem; }
+.btn-wide { width: 100%; }
+
+.buyer-option { padding-top: 90px; min-height: 100vh; padding-bottom: 3rem; }
+.page-header { margin-bottom: 2.5rem; }
+.page-title { font-size: clamp(1.75rem, 4vw, 2.5rem); color: var(--text); margin-bottom: 0.5rem; }
+.page-sub { font-size: 1rem; color: var(--text-muted); }
+
+.buyers-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+.buyer-card { background: var(--surface); border: 1px solid var(--glass-border); border-radius: var(--radius-lg); overflow: hidden; display: flex; flex-direction: column; transition: var(--transition); }
+.buyer-card:hover { transform: translateY(-6px); border-color: rgba(191,54,12,0.3); box-shadow: var(--shadow-lg); }
+.buyer-header { display: flex; align-items: center; justify-content: space-between; padding: 1.5rem; border-bottom: 1px solid var(--glass-border); }
+.buyer-avatar { width: 48px; height: 48px; background: var(--glass); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; color: var(--accent); flex-shrink: 0; }
+.buyer-info { flex: 1; margin-left: 1rem; }
+.buyer-name { font-weight: 800; font-size: 1rem; color: var(--text); }
+.buyer-verified { font-size: 0.7rem; color: var(--success); font-weight: 600; margin-top: 0.15rem; }
+.buyer-distance { font-size: 0.85rem; font-weight: 700; color: var(--accent); white-space: nowrap; }
+.buyer-body { padding: 1.5rem; display: flex; flex-direction: column; gap: 1rem; }
+.offer-row { display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; }
+.offer-label { color: var(--text-muted); font-weight: 600; }
+.offer-value { color: var(--text); font-weight: 700; }
+.buyer-footer { padding: 1.25rem 1.5rem; background: rgba(0,0,0,0.2); border-top: 1px solid var(--glass-border); display: flex; justify-content: space-between; align-items: center; }
+.trust-info { display: flex; flex-direction: column; gap: 0.25rem; }
+.trust-badge { font-size: 0.7rem; font-weight: 900; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); background: rgba(191,54,12,0.1); padding: 0.25rem 0.75rem; border-radius: 6px; border: 1px solid rgba(191,54,12,0.2); display: inline-block; margin-bottom: 0.25rem; }
+.trust-score { font-size: 0.85rem; color: var(--text-muted); font-weight: 600; }
+
+.reveal { opacity: 0; transform: translateY(40px); transition: opacity 800ms ease-out, transform 800ms ease-out; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal.delay-1 { transition-delay: 100ms; }
+
+@media (max-width: 600px) {
+  .buyer-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .buyer-distance { align-self: flex-end; }
+  .buyer-footer { flex-direction: column; align-items: flex-start; gap: 1rem; }
+}

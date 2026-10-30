@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FarmProfit | Profit Comparison</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="profit-comparison.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="farmer-dashboard.html" class="nav-logo">FarmProfit</a>
+      <div class="nav-actions">
+        <a href="farmer-dashboard.html" class="btn btn-ghost" data-scroll>Back</a>
+        <a href="farmer-dashboard.html" class="btn btn-ghost">Farmer Dashboard</a>
+        <a href="add-crop.html" class="btn btn-ghost">Add Crop</a>
+        <a href="buyer-option.html" class="btn btn-ghost">Buyer Options</a>
+        <a href="buyer-detail.html" class="btn btn-ghost">Buyer Detail</a>
+        <a href="storage-transport.html" class="btn btn-ghost">Storage &amp; Transport</a>
+        <a href="order-tracking.html" class="btn btn-ghost">Order Tracking</a>
+        <a href="buyer-dashboard.html" class="btn btn-ghost">Buyer Dashboard</a>
+        <a href="admin-dashboard.html" class="btn btn-ghost">Admin</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="profit-comparison">
+    <div class="page-header reveal">
+      <h1 class="page-title">Profit Comparison</h1>
+      <p class="page-sub">Compare selling channels to find the most profitable option. All calculations include FarmProfit brokerage (2.5%).</p>
+    </div>
+
+    <div class="brokerage-banner reveal">
+      <p><strong>💰 FarmProfit Brokerage:</strong> 2.5% platform service fee is charged on every successful deal. This is included in all cost calculations above.</p>
+    </div>
+
+    <div class="options-grid reveal delay-1">
+      <div class="option-card recommended">
+        <div class="option-badge">Best Value</div>
+        <div class="option-name">Direct Buyer</div>
+        <div class="option-meta">
+          <span class="meta-label">Sale Value</span>
+          <span class="meta-value">₹4,27,500</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Transport Cost</span>
+          <span class="cost-value">₹12,000</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Storage Cost</span>
+          <span class="cost-value">₹0</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Commission</span>
+          <span class="cost-value">₹8,550</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Packaging Cost</span>
+          <span class="cost-value">₹4,500</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Expected Spoilage Loss</span>
+          <span class="cost-value">₹2,100</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">FarmProfit Brokerage (2.5%)</span>
+          <span class="cost-value">₹10,688</span>
+        </div>
+        <div class="net-income">
+          <span class="net-label">Final Net Income</span>
+          <span class="net-value">₹3,89,662</span>
+        </div>
+        <div class="risk-row">
+          <span class="risk-label">Risk Level</span>
+          <span class="risk-value risk-low">Low</span>
+        </div>
+        <div class="payment-row">
+          <span class="pay-label">Estimated Payment Date</span>
+          <span class="pay-value">Nov 2, 2026</span>
+        </div>
+        <button class="btn btn-primary btn-wide">Select This Option</button>
+      </div>
+
+      <div class="option-card">
+        <div class="option-name">Local Trader</div>
+        <div class="option-meta">
+          <span class="meta-label">Sale Value</span>
+          <span class="meta-value">₹3,67,500</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Transport Cost</span>
+          <span class="cost-value">₹3,000</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Storage Cost</span>
+          <span class="cost-value">₹0</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Commission</span>
+          <span class="cost-value">₹18,375</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Packaging Cost</span>
+          <span class="cost-value">₹3,500</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Expected Spoilage Loss</span>
+          <span class="cost-value">₹1,500</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">FarmProfit Brokerage (2.5%)</span>
+          <span class="cost-value">₹9,188</span>
+        </div>
+        <div class="net-income">
+          <span class="net-label">Final Net Income</span>
+          <span class="net-value">₹3,31,938</span>
+        </div>
+        <div class="risk-row">
+          <span class="risk-label">Risk Level</span>
+          <span class="risk-value risk-low">Low</span>
+        </div>
+        <div class="payment-row">
+          <span class="pay-label">Estimated Payment Date</span>
+          <span class="pay-value">Same day</span>
+        </div>
+        <button class="btn btn-primary btn-wide">Select This Option</button>
+      </div>
+
+      <div class="option-card">
+        <div class="option-name">Storage & Late Sale</div>
+        <div class="option-meta">
+          <span class="meta-label">Sale Value</span>
+          <span class="meta-value">₹4,55,000</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Transport Cost</span>
+          <span class="cost-value">₹6,000</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Storage Cost</span>
+          <span class="cost-value">₹15,000</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Commission</span>
+          <span class="cost-value">₹9,100</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Packaging Cost</span>
+          <span class="cost-value">₹5,000</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Expected Spoilage Loss</span>
+          <span class="cost-value">₹4,500</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">FarmProfit Brokerage (2.5%)</span>
+          <span class="cost-value">₹11,375</span>
+        </div>
+        <div class="net-income">
+          <span class="net-label">Final Net Income</span>
+          <span class="net-value">₹4,04,025</span>
+        </div>
+        <div class="risk-row">
+          <span class="risk-label">Risk Level</span>
+          <span class="risk-value risk-medium">Medium</span>
+        </div>
+        <div class="payment-row">
+          <span class="pay-label">Estimated Payment Date</span>
+          <span class="pay-value">Nov 15, 2026</span>
+        </div>
+        <button class="btn btn-primary btn-wide">Select This Option</button>
+      </div>
+
+      <div class="option-card">
+        <div class="option-name">Food Processor</div>
+        <div class="option-meta">
+          <span class="meta-label">Sale Value</span>
+          <span class="meta-value">₹3,90,000</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Transport Cost</span>
+          <span class="cost-value">₹18,000</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Storage Cost</span>
+          <span class="cost-value">₹0</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Commission</span>
+          <span class="cost-value">₹7,800</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Packaging Cost</span>
+          <span class="cost-value">₹6,500</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Expected Spoilage Loss</span>
+          <span class="cost-value">₹3,200</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">FarmProfit Brokerage (2.5%)</span>
+          <span class="cost-value">₹9,750</span>
+        </div>
+        <div class="net-income">
+          <span class="net-label">Final Net Income</span>
+          <span class="net-value">₹3,44,750</span>
+        </div>
+        <div class="risk-row">
+          <span class="risk-label">Risk Level</span>
+          <span class="risk-value risk-medium">Medium</span>
+        </div>
+        <div class="payment-row">
+          <span class="pay-label">Estimated Payment Date</span>
+          <span class="pay-value">Nov 20, 2026</span>
+        </div>
+        <button class="btn btn-primary btn-wide">Select This Option</button>
+      </div>
+
+      <div class="option-card">
+        <div class="option-name">Combine Farmer Sale</div>
+        <div class="option-meta">
+          <span class="meta-label">Sale Value</span>
+          <span class="meta-value">₹4,12,500</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Transport Cost</span>
+          <span class="cost-value">₹9,000</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Storage Cost</span>
+          <span class="cost-value">₹2,500</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Commission</span>
+          <span class="cost-value">₹6,188</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Packaging Cost</span>
+          <span class="cost-value">₹4,000</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">Expected Spoilage Loss</span>
+          <span class="cost-value">₹2,800</span>
+        </div>
+        <div class="cost-row">
+          <span class="cost-label">FarmProfit Brokerage (2.5%)</span>
+          <span class="cost-value">₹10,313</span>
+        </div>
+        <div class="net-income">
+          <span class="net-label">Final Net Income</span>
+          <span class="net-value">₹3,77,700</span>
+        </div>
+        <div class="risk-row">
+          <span class="risk-label">Risk Level</span>
+          <span class="risk-value risk-low">Low</span>
+        </div>
+        <div class="payment-row">
+          <span class="pay-label">Estimated Payment Date</span>
+          <span class="pay-value">Nov 5, 2026</span>
+        </div>
+        <button class="btn btn-primary btn-wide">Select This Option</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="profit-comparison.js"></script>
+</body>
+</html>

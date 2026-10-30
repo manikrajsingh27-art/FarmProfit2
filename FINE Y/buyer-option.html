@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FarmProfit | Buyer Options</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="buyer-option.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="welcome.html" class="nav-logo">FarmProfit</a>
+      <div class="nav-actions">
+        <a href="farmer-dashboard.html" class="btn btn-ghost" data-scroll>Back</a>
+        <a href="farmer-dashboard.html" class="btn btn-ghost">Farmer Dashboard</a>
+        <a href="buyer-detail.html" class="btn btn-ghost">Buyer Detail</a>
+        <a href="buyer-dashboard.html" class="btn btn-ghost">Buyer Dashboard</a>
+        <a href="order-tracking.html" class="btn btn-ghost">Order Tracking</a>
+        <a href="profit-comparison.html" class="btn btn-ghost">Profit Compare</a>
+        <a href="storage-transport.html" class="btn btn-ghost">Storage &amp; Transport</a>
+        <a href="admin-dashboard.html" class="btn btn-ghost">Admin</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="buyer-option">
+    <div class="page-header reveal">
+      <h1 class="page-title">Available Buyers</h1>
+      <p class="page-sub">Review offers and choose the best buyer for your crop</p>
+    </div>
+
+    <div class="buyers-grid reveal delay-1">
+      <div class="buyer-card">
+        <div class="buyer-header">
+          <div class="buyer-avatar">A</div>
+          <div class="buyer-info">
+            <div class="buyer-name">FreshMart Direct</div>
+            <div class="buyer-verified">Verified Buyer</div>
+          </div>
+          <div class="buyer-distance">12 km away</div>
+        </div>
+        <div class="buyer-body">
+          <div class="offer-row">
+            <span class="offer-label">Offered Price</span>
+            <span class="offer-value">₹2,350 / quintal</span>
+          </div>
+          <div class="offer-row">
+            <span class="offer-label">Required Quantity</span>
+            <span class="offer-value">150 quintals</span>
+          </div>
+          <div class="offer-row">
+            <span class="offer-label">Quality Requirement</span>
+            <span class="offer-value">Grade A+</span>
+          </div>
+          <div class="offer-row">
+            <span class="offer-label">Pickup Date</span>
+            <span class="offer-value">Oct 30, 2026</span>
+          </div>
+          <div class="offer-row">
+            <span class="offer-label">Estimated Payment</span>
+            <span class="offer-value">Within 48 hours</span>
+          </div>
+        </div>
+        <div class="buyer-footer">
+          <div class="trust-info">
+            <span class="trust-badge">Batch: V-8842</span>
+            <span class="trust-score">Reliability 4.9★</span>
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="msgBuyer('buyer-freshmart-1', 'FreshMart Direct', 'buyer')">Message</button>
+          <button class="btn btn-ghost btn-sm" onclick="viewBuyerDetail('buyer-freshmart-1')">View Details</button>
+        </div>
+      </div>
+
+      <div class="buyer-card">
+        <div class="buyer-header">
+          <div class="buyer-avatar">G</div>
+          <div class="buyer-info">
+            <div class="buyer-name">GrainHub Traders</div>
+            <div class="buyer-verified">Verified Buyer</div>
+          </div>
+          <div class="buyer-distance">28 km away</div>
+        </div>
+        <div class="buyer-body">
+          <div class="offer-row">
+            <span class="offer-label">Offered Price</span>
+            <span class="offer-value">₹2,100 / quintal</span>
+          </div>
+          <div class="offer-row">
+            <span class="offer-label">Required Quantity</span>
+            <span class="offer-value">300 quintals</span>
+          </div>
+          <div class="offer-row">
+            <span class="offer-label">Quality Requirement</span>
+            <span class="offer-value">Grade B+</span>
+          </div>
+          <div class="offer-row">
+            <span class="offer-label">Pickup Date</span>
+            <span class="offer-value">Nov 2, 2026</span>
+          </div>
+          <div class="offer-row">
+            <span class="offer-label">Estimated Payment</span>
+            <span class="offer-value">Within 7 days</span>
+          </div>
+        </div>
+        <div class="buyer-footer">
+          <div class="trust-info">
+            <span class="trust-badge">Batch: V-9011</span>
+            <span class="trust-score">Reliability 4.6★</span>
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="msgBuyer('buyer-grainhub-1', 'GrainHub Traders', 'buyer')">Message</button>
+          <button class="btn btn-ghost btn-sm" onclick="viewBuyerDetail('buyer-grainhub-1')">View Details</button>
+        </div>
+      </div>
+
+      <div class="buyer-card">
+        <div class="buyer-header">
+          <div class="buyer-avatar">P</div>
+          <div class="buyer-info">
+            <div class="buyer-name">AgriFood Processor</div>
+            <div class="buyer-verified">Verified Buyer</div>
+          </div>
+          <div class="buyer-distance">45 km away</div>
+        </div>
+        <div class="buyer-body">
+          <div class="offer-row">
+            <span class="offer-label">Offered Price</span>
+            <span class="offer-value">₹2,550 / quintal</span>
+          </div>
+          <div class="offer-row">
+            <span class="offer-label">Required Quantity</span>
+            <span class="offer-value">500 quintals</span>
+          </div>
+          <div class="offer-row">
+            <span class="offer-label">Quality Requirement</span>
+            <span class="offer-value">Grade A</span>
+          </div>
+          <div class="offer-row">
+            <span class="offer-label">Pickup Date</span>
+            <span class="offer-value">Nov 10, 2026</span>
+          </div>
+          <div class="offer-row">
+            <span class="offer-label">Estimated Payment</span>
+            <span class="offer-value">Within 14 days</span>
+          </div>
+        </div>
+        <div class="buyer-footer">
+          <div class="trust-info">
+            <span class="trust-badge">Batch: V-9105</span>
+            <span class="trust-score">Reliability 4.8★</span>
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="msgBuyer('buyer-agrifood-1', 'AgriFood Processor', 'buyer')">Message</button>
+          <button class="btn btn-ghost btn-sm" onclick="viewBuyerDetail('buyer-agrifood-1')">View Details</button>
+        </div>
+      </div>
+
+      <div class="buyer-card">
+        <div class="buyer-header">
+          <div class="buyer-avatar">L</div>
+          <div class="buyer-info">
+            <div class="buyer-name">Local Mandi Trader</div>
+            <div class="buyer-verified">Basic Verified</div>
+          </div>
+          <div class="buyer-distance">5 km away</div>
+        </div>
+        <div class="buyer-body">
+          <div class="offer-row">
+            <span class="offer-label">Offered Price</span>
+            <span class="offer-value">₹1,950 / quintal</span>
+          </div>
+          <div class="offer-row">
+            <span class="offer-label">Required Quantity</span>
+            <span class="offer-value">Any quantity</span>
+          </div>
+          <div class="offer-row">
+            <span class="offer-label">Quality Requirement</span>
+            <span class="offer-value">All grades</span>
+          </div>
+          <div class="offer-row">
+            <span class="offer-label">Pickup Date</span>
+            <span class="offer-value">Immediate</span>
+          </div>
+          <div class="offer-row">
+            <span class="offer-label">Estimated Payment</span>
+            <span class="offer-value">Same day (cash)</span>
+          </div>
+        </div>
+        <div class="buyer-footer">
+          <div class="trust-info">
+            <span class="trust-badge">Batch: V-7721</span>
+            <span class="trust-score">Reliability 4.1★</span>
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="msgBuyer('buyer-mandi-1', 'Local Mandi Trader', 'buyer')">Message</button>
+          <button class="btn btn-ghost btn-sm" onclick="viewBuyerDetail('buyer-mandi-1')">View Details</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="buyer-option.js"></script>
+</body>
+</html>
